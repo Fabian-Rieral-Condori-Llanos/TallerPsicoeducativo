@@ -1,0 +1,51 @@
+/* Estilos para la sección Acerca del Taller */
+#acerca {
+  position: relative;
+}
+
+#acerca h2 {
+  position: relative;
+  display: inline-block;
+}
+
+#acerca h2::after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background-color: #4f46e5; /* indigo-600 */
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#acerca .grid {
+  transition: transform 0.3s ease;
+}
+
+#acerca .grid > div {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#acerca .grid > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+#acerca ul li {
+  transition: transform 0.2s ease;
+}
+
+#acerca ul li:hover {
+  transform: translateX(5px);
+}
+
+#acerca .bg-indigo-50 {
+  border-left: 4px solid #4f46e5; /* indigo-600 */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#acerca .bg-indigo-50:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}

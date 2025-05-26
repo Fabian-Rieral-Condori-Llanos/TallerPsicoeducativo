@@ -1,0 +1,40 @@
+/* Estilos específicos para el encabezado */
+header {
+  transition: background-color 0.3s ease;
+}
+
+header.scrolled {
+  background-color: rgba(79, 70, 229, 0.95); /* indigo-600 con transparencia */
+  backdrop-filter: blur(5px);
+}
+
+/* Animación para el menú móvil */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+header nav a {
+  position: relative;
+}
+
+header nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #c7d2fe; /* indigo-200 */
+  transition: width 0.3s ease;
+}
+
+header nav a:hover::after {
+  width: 100%;
+}
